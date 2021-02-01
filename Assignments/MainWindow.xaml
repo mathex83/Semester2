@@ -7,31 +7,38 @@
         mc:Ignorable="d"
         Title="MainWindow"  Style="{StaticResource mainwin}" WindowStartupLocation="CenterScreen">
     <Grid Style="{StaticResource maingrid}">
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition/>
-			<ColumnDefinition/>
-			<ColumnDefinition/>
-			<ColumnDefinition/>
-		</Grid.ColumnDefinitions>
-		<Grid.RowDefinitions>
-			<RowDefinition/>
-			<RowDefinition/>
-			<RowDefinition/>
-			<RowDefinition/>
-			<RowDefinition/>
-			<RowDefinition/>
-			<RowDefinition/>
-			<RowDefinition/>
-		</Grid.RowDefinitions>
 		<Menu Style="{StaticResource standardmenu}">
-			<MenuItem x:Name="StackDocs" Header="Stack Documentation" Click="DocumentationClick" Style="{StaticResource standardmenuitem}"/>
-			<MenuItem x:Name="LinkedListDocs" Header="LinkedList" Click="DocumentationClick" Style="{StaticResource standardmenuitem}"/>
+			<StackPanel Orientation="Horizontal" Style="{StaticResource standardstackpanel}">
+				<StackPanel Orientation="Vertical" Style="{StaticResource standardstackpanel}">
+					<MenuItem x:Name="StackDocs" Click="DocumentationClick" Style="{StaticResource standardmenuitem}">
+						<MenuItem.Header>
+							<TextBlock Text="Stack Documentation" Style="{StaticResource menuitemtext}"/>
+						</MenuItem.Header>
+					</MenuItem>
+					<MenuItem x:Name="LinkedListDocs" Click="DocumentationClick" Style="{StaticResource standardmenuitem}">
+						<MenuItem.Header>
+							<TextBlock Text="LinkedList Documentation" Style="{StaticResource menuitemtext}"/>
+						</MenuItem.Header>
+					</MenuItem>
+				</StackPanel>
+				<StackPanel Orientation="Vertical">
+					<MenuItem x:Name="StackAss" Click="MenuClick" Style="{StaticResource standardmenuitem}">
+						<MenuItem.Header>
+							<TextBlock Text="Stack Assignment" Style="{StaticResource menuitemtext}"/>
+						</MenuItem.Header>
+					</MenuItem>
+					<MenuItem x:Name="LinkedListAss" Click="MenuClick" Style="{StaticResource standardmenuitem}">
+						<MenuItem.Header>
+							<TextBlock Text="LinkedList Assignment" Style="{StaticResource menuitemtext}"/>
+						</MenuItem.Header>
+					</MenuItem>
+				</StackPanel>
+			</StackPanel>
 		</Menu>
 		
 		
-		<Button x:Name="StackAss" Content="Stack Assignment" Grid.Column="1" Grid.Row="0" Click="MenuClick" Style="{StaticResource standardbutton}"/>
 		
-		<Button Content="EXIT" Grid.Column="3" Grid.Row="7" Click="ExitClick" Style="{StaticResource standardbutton}"/>
+		<Button Content="EXIT" Click="ExitClick" Style="{StaticResource standardbutton}"/>
 
 	</Grid>
 </Window>

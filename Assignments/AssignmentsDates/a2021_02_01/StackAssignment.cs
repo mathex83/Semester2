@@ -8,6 +8,9 @@ namespace Assignments.AssignmentsDates.a2021_02_01
 {
 	class StackAssignment
 	{
+		//Make a Stack.
+		//Add some Star Wars-movies to it.
+		//Empty the Stack.
 		public void StackCreator()
 		{
 			string outputvalue = "";
@@ -21,7 +24,7 @@ namespace Assignments.AssignmentsDates.a2021_02_01
 				outputvalue += $"Movie removed: {movies.Pop()}\n";
 			}
 			while (movies.Count > 0);
-
+			outputvalue += $"\nThe Stack now has {movies.Count} entries";
 			View.Windows.ReturnWindow rw = new View.Windows.ReturnWindow();
 			rw.MsgTxt.Text = outputvalue;
 			rw.Show();
