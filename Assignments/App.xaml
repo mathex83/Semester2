@@ -1,0 +1,57 @@
+﻿<Application x:Class="Assignments.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Assignments"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+		<Style x:Key="mainwin" TargetType="Window">
+			<Setter Property="Height" Value="800"/>
+			<Setter Property="Width" Value="1400"/>
+			<Setter Property="Background" Value="LightGray"/>
+		</Style>
+
+		<Style x:Key="errorwin" TargetType="Window">
+			<Setter Property="Height" Value="800"/>
+			<Setter Property="Width" Value="800"/>
+			<Setter Property="Background" Value="LightGray"/>
+		</Style>
+
+		<Style x:Key="returnwin" TargetType="Window">
+			<Setter Property="Height" Value="800"/>
+			<Setter Property="Width" Value="800"/>
+			<Setter Property="Background" Value="LightGray"/>
+		</Style>
+
+		<Style x:Key="maingrid" TargetType="Grid">
+			<Setter Property="Background" Value="#000000ff"/>
+		</Style>
+		
+		<Style x:Key="standardbutton" TargetType="Button">
+			<Setter Property="Background" Value="Gray"/>
+			<Setter Property="Foreground" Value="Black"/>
+			<Setter Property="Height" Value="40"/>
+			<Setter Property="Width" Value="200"/>
+		</Style>
+
+		<Style x:Key="standardmenu" TargetType="Menu">
+			<Setter Property="Background" Value="#000000ff"/>
+		</Style>
+
+		<Style x:Key="standardmenuitem" TargetType="MenuItem">
+			<Setter Property="Background" Value="Gray"/>
+			<Setter Property="Foreground" Value="Black"/>
+			<Setter Property="Height" Value="40"/>
+			<Setter Property="Width" Value="200"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		
+
+		<Style x:Key="returntext" TargetType="TextBlock">
+			<Setter Property="Background" Value="#000000ff"/>
+			<Setter Property="Foreground" Value="Black"/>
+			<Setter Property="Margin" Value="5,20"/>
+			<Setter Property="FontSize" Value="16"/>
+		</Style>
+
+	</Application.Resources>
+</Application>
