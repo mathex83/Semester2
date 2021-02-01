@@ -32,12 +32,16 @@ namespace Assignments
 
 		private void MenuClick(object sender, RoutedEventArgs e)
 		{
-			Button b = sender as Button;
+			MenuItem b = sender as MenuItem;
 			switch (b.Name)
 			{
 				case "StackAss":
 					AssignmentsDates.a2021_02_01.StackAssignment stack = new AssignmentsDates.a2021_02_01.StackAssignment();
 					stack.StackCreator();
+					break;
+				case "LinkedListAss":
+					AssignmentsDates.a2021_02_01.LinkedListAssignment linkedList = new AssignmentsDates.a2021_02_01.LinkedListAssignment();
+					linkedList.LinkedListMethod();
 					break;
 			}				
 		}
