@@ -43,7 +43,15 @@ namespace Assignments
 					AssignmentsDates.a2021_02_01.LinkedListAssignment linkedList = new AssignmentsDates.a2021_02_01.LinkedListAssignment();
 					linkedList.LinkedListMethod();
 					break;
-			}				
+				case "QueueAss":
+					AssignmentsDates.a2021_02_01.QueueAssignment queue = new AssignmentsDates.a2021_02_01.QueueAssignment();
+					queue.QueueMethod();
+					break;					
+				case "DictionaryAss":
+					AssignmentsDates.a2021_02_01.DictionaryAssignment dict = new AssignmentsDates.a2021_02_01.DictionaryAssignment();
+					dict.DictionaryMethod();
+					break;
+			}
 		}
 
 		private void DocumentationClick(object sender, RoutedEventArgs e)

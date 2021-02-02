@@ -26,6 +26,7 @@ namespace Assignments.View.Windows
 
 		private void CloseClick(object sender, RoutedEventArgs e)
 		{
+			MsgTxt.Text = "";
 			this.Close();
 		}
 	}
