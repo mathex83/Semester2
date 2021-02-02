@@ -1,0 +1,33 @@
+﻿<Window x:Class="Assignments.View.Windows.QueueAssignmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignments.View.Windows"
+        mc:Ignorable="d"
+        Style="{StaticResource mainwin}" WindowStartupLocation="CenterScreen">
+    <Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="150"/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="100"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Button x:Name="logbtn" Content="LOGIN" Grid.Column="0" Grid.Row="0"  Click="Callcenter" Style="{StaticResource standardbutton}"/>
+		<Button x:Name="addbtn" Content="Add call" Grid.Column="1" HorizontalAlignment="Left" Margin="20" Grid.Row="0" Click="Callcenter"
+				Style="{StaticResource standardbutton}"/>
+		<Button x:Name="takebtn" Content="Take call" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" Margin="150,0" Click="Callcenter" Style="{StaticResource standardbutton}"/>
+		<TextBlock x:Name="calltaken" Style="{StaticResource callcenterqueuelabel}" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right"
+				   VerticalAlignment="Top" Width="470"/>
+		<Button x:Name="endbtn" Content="End call" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" Margin="20"  Click="Callcenter"
+				Style="{StaticResource standardbutton}"/>
+		<Button Content="Exit and empty" Grid.Column="2" Grid.Row="0" Click="CloseClick" Style="{StaticResource standardbutton}"/>
+		<TextBlock Text="In Queue:" Grid.Column="1" Grid.Row="1" Style="{StaticResource callcenterqueuelabel}"/>
+		<TextBlock x:Name="incomingqueuetxt" Grid.Column="1" Grid.Row="1" Style="{StaticResource callcenterqueue}"/>
+		<TextBlock Text="Ended:" Grid.Column="2" Grid.Row="1" Style="{StaticResource callcenterqueuelabel}"/>
+		<TextBlock x:Name="endqueuetxt" Grid.Column="2" Grid.Row="1" Style="{StaticResource callcenterqueue}"/>
+	</Grid>
+</Window>

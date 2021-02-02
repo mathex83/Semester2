@@ -20,6 +20,16 @@
 							<TextBlock Text="LinkedList Documentation" Style="{StaticResource menuitemtext}"/>
 						</MenuItem.Header>
 					</MenuItem>
+					<MenuItem x:Name="QueueDocs" Click="DocumentationClick" Style="{StaticResource standardmenuitem}">
+						<MenuItem.Header>
+							<TextBlock Text="Queue Documentation" Style="{StaticResource menuitemtext}"/>
+						</MenuItem.Header>
+					</MenuItem>
+					<MenuItem x:Name="DictionaryDocs" Click="DocumentationClick" Style="{StaticResource standardmenuitem}">
+						<MenuItem.Header>
+							<TextBlock Text="Dictionary Documentation" Style="{StaticResource menuitemtext}"/>
+						</MenuItem.Header>
+					</MenuItem>
 				</StackPanel>
 				<StackPanel Orientation="Vertical">
 					<MenuItem x:Name="StackAss" Click="MenuClick" Style="{StaticResource standardmenuitem}">
@@ -32,11 +42,19 @@
 							<TextBlock Text="LinkedList Assignment" Style="{StaticResource menuitemtext}"/>
 						</MenuItem.Header>
 					</MenuItem>
+					<MenuItem x:Name="QueueAss" Click="MenuClick" Style="{StaticResource standardmenuitem}">
+						<MenuItem.Header>
+							<TextBlock Text="Queue Assignment" Style="{StaticResource menuitemtext}"/>
+						</MenuItem.Header>
+					</MenuItem>
+					<MenuItem x:Name="DictionaryAss" Click="MenuClick" Style="{StaticResource standardmenuitem}">
+						<MenuItem.Header>
+							<TextBlock Text="Dictionary Assignment" Style="{StaticResource menuitemtext}"/>
+						</MenuItem.Header>
+					</MenuItem>
 				</StackPanel>
 			</StackPanel>
 		</Menu>
-		
-		
 		
 		<Button Content="EXIT" Click="ExitClick" Style="{StaticResource standardbutton}"/>
 
