@@ -39,6 +39,10 @@ namespace Assignments
 					AssignmentsDates.a2021_02_01.DictionaryAssignment dict = new AssignmentsDates.a2021_02_01.DictionaryAssignment();
 					dict.DictionaryMethod();
 					break;
+				case "SetAss":
+					AssignmentsDates.a2021_02_03.SetClass setClass = new AssignmentsDates.a2021_02_03.SetClass();
+					setClass.SetClassRunner();
+					break;
 			}
 		}
 

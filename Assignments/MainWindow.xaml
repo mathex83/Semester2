@@ -52,6 +52,11 @@
 							<TextBlock Text="Dictionary Assignment" Style="{StaticResource menuitemtext}"/>
 						</MenuItem.Header>
 					</MenuItem>
+					<MenuItem x:Name="SetAss" Click="MenuClick" Style="{StaticResource standardmenuitem}">
+						<MenuItem.Header>
+							<TextBlock Text="Set Assignment" Style="{StaticResource menuitemtext}"/>
+						</MenuItem.Header>
+					</MenuItem>
 				</StackPanel>
 			</StackPanel>
 		</Menu>
